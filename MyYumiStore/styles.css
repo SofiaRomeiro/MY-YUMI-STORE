@@ -1,0 +1,39 @@
+body {
+	/* remember : font-family */
+	background-color: white
+	margin: 0px;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+	width : 100%;
+}
+
+.nav-wrapper{
+	display: flex;
+	justify-content: space-between;
+	padding: 35px;
+	background-color: lightgreen;
+}
+
+.left-side{
+	display: flex;
+}
+
+.btn{
+	background-color: white;
+	color: black;
+	margin-right: 15px;
+}
+
+.center{
+	display: flex
+	justify-content: center;
+	font-size: 1.5rem;
+
+}
+
+.right-side{
+	display: flex;
+}
