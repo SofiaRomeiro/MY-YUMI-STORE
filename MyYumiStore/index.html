@@ -18,8 +18,8 @@
 <body>
 	<div class="nav-wrapper">
 		<div class="left-side">
-			<a type="button" class="btn btn-outline-info" href="recipes.html">Recipes</a>
-			<a type="button" class="btn btn-outline-info" href="https://www.google.com">Search</a>
+			<a type="button" class="btn btn-outline-info" href="index.html">Home</a>
+			<a type="button" class="btn btn-outline-info" href="recipes.html">Recipes</a>			
 			<a type="button" class="btn btn-outline-info" href="about.html">About</a>
 		</div>
 		<div class="center">
@@ -31,9 +31,48 @@
 			Sofia Romeiro
 		</div>
 	</div>
+
 	<div class="container"> 
-	
+
+		<div class="generator">
+			<a type="button" class="btn btn-info">What's today's meal?</a>			
+		</div>
+
+		<div class="add-recipe">
+
+			<div class="text-add">
+				ADD NEW ONE...
+			</div>
+
+			<div class="input-group mb-3" style="padding-bottom: 0px !important" >
+				<span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+				<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>
+
+			<div class="input-group">
+				<select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+					<option selected>Escolha uma opção</option>
+					<option value="1">Carne</option>
+					<option value="2">Peixe</option>
+					<option value="3">Vegetariano</option>
+				</select>
+				<button class="btn btn-outline-secondary" type="button">Opções</button>
+			</div>
+
+				<div class="input-group">
+					<span class="input-group-text">Ingredientes</span>
+					<textarea class="form-control" aria-label="With textarea"></textarea>
+				</div>
+
+				<div class="input-group">
+					<span class="input-group-text">Preparação</span>
+					<textarea class="form-control" aria-label="With textarea"></textarea>
+				</div>
+		
+		</div>	
 <!--		<button onclick="add_recipe(new Recipe('salmao', 'peixe', [], []))" type="button" class="btn btn-secondary">Add</button> -->
+	
+	
 
 	</div>
 </body>

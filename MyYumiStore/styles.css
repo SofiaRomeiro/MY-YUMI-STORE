@@ -12,13 +12,22 @@ body {
 
 .nav-wrapper{
 	display: flex;
+	position: sticky;
+	top: 0;
 	justify-content: space-between;
-	padding: 35px;
+	padding: 25px;
 	background-color: lightgreen;
 }
 
 .left-side{
 	display: flex;
+}
+
+.title{
+	font-family: "Lexend Mega", sans-serif;
+	display: flex;
+	margin-right: 200px;
+	font-size: 110%
 }
 
 .btn{
@@ -31,9 +40,37 @@ body {
 	display: flex
 	justify-content: center;
 	font-size: 1.5rem;
-
 }
 
 .right-side{
 	display: flex;
+	font-family: "Lexend Mega", sans-serif;
+	margin-top: 10px
 }
+
+.add-recipe{
+	margin-top: 1500px;
+	margin-right: 700px;
+	margin-left: -200px;
+	margin-bottom: 50px
+}
+
+.text-add{
+	display: flex;
+	padding-bottom: 15px;
+	font-size: 150%;
+}
+
+.input-group{
+	padding-bottom: 15px;
+}
+
+.input-group > .form-select{
+	margin-right: 5px
+}
+
+.generator{
+	margin-top: 200px;	
+}
+
+
