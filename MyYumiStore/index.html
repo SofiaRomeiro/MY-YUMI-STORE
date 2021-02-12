@@ -32,37 +32,56 @@
 		</div>
 	</div>
 
+<!--		Image + today's meal btn 	-->
+
 	<div class="container"> 
 
 		<img src="images/food-right-center.jpg" alt="Snow"></img>
 		<button class="btn">What's today's meal?</button>
 
-		<div class="accordion" id="accordionExample">
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="headingOne">
-					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">ola</button>
-				</h2>
-				<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-					<div class="accordion-body">
-					</div>
-				</div>
-			</div>
-		</div>
+<!--			Ingredients				-->
 
+<div class="accordion" id="accordionExample">
+	<div class="accordion-item">
+			<h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Ingredients
+				</button>
+			</h2>
+		<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+			<div class="accordion-body"></div>
+		</div>
+	</div>
+
+<!--			Preparation		-->		
+
+	<div class="accordion-item">
+		<h2 class="accordion-header" id="headingTwo">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				Preparation
+			</button>
+		</h2>
+		<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+			<div class="accordion-body"></div>
+		</div>
+	</div>
+</div>
+
+<!-- Adicionar nova receita -->
 		<div class="add-recipe">
 
 			<div class="text-add">
 				ADD NEW ONE...
 			</div>
-<!-- Adicionar nova receita -->
+
 			<div class="input-group mb-3" style="padding-bottom: 0px !important" >
-				<span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+				<span class="input-group-text" id="inputGroup-sizing-default">Name</span>
 				<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 			</div>
 
 			<div class="input-group">
 				<select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-					<option selected>Opções</option>
+					<option selected>Options...</option>
 					<option value="1">Carne</option>
 					<option value="2">Peixe</option>
 					<option value="3">Vegetariano</option>
@@ -71,23 +90,18 @@
 			</div>
 
 				<div class="input-group">
-					<span class="input-group-text">Ingredientes</span>
+					<span class="input-group-text">Ingredients</span>
 					<textarea class="form-control" aria-label="With textarea"></textarea>
 				</div>
 
 				<div class="input-group">
-					<span class="input-group-text">Preparação</span>
+					<span class="input-group-text">Preparation</span>
 					<textarea class="form-control" aria-label="With textarea"></textarea>
 				</div>
 		
 		</div>	
 <!--		<button onclick="add_recipe(new Recipe('salmao', 'peixe', [], []))" type="button" class="btn btn-secondary">Add</button> -->
-	
-	
-
 	</div>
 </body>
-
-
 
 </html>

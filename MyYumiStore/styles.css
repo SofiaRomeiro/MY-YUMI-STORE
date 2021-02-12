@@ -1,5 +1,6 @@
 body {
 	/* remember : font-family */
+	position: relative;
 	background-color: white
 	width: 100%;
 }
@@ -64,7 +65,7 @@ body {
 .container img {
 	position: absolute;
 	margin-top: 5%;
-	margin-left: 5%;
+	margin-left: 0%;
 	width: 50%;
 	opacity: 0.8;
 	border-radius: 10px;
@@ -74,7 +75,7 @@ body {
 .container > .btn {
 	position: absolute;
 	margin-top: 20%;
-	margin-left: 20%;
+	margin-left: 15%;
 	background-color: lightgreen;
 	color: black;
 	font-size: 16px;
@@ -94,16 +95,18 @@ body {
 
 .accordion{
 	grid-column: 2;
-	margin-top: 20px;
-	width: 70%;
-	
+	margin-top: 40%;
+	width: 80%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 5%
 }
 
 /* --------------------------------------- Add Recipe ----------------------------------------*/
 
 .add-recipe{
 	grid-column: 1;
-	margin-top: 150%;
+	margin-top: 110%;
 	margin-right: 5%;
 	margin-left: 10%;
 	margin-bottom: 15%
