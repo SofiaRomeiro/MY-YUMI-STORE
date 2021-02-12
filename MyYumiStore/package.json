@@ -1,0 +1,14 @@
+{
+  "name": "myyumistore",
+  "version": "1.0.0",
+  "description": ">#### 1. Build the project\r >> - creating folder\r >> - creating files\r >> - adding files and connecting",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sofia",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}

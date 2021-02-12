@@ -1,39 +1,49 @@
 body {
 	/* remember : font-family */
 	background-color: white
-	margin: 0px;
+	width: 100%;
 }
 
 .container{
 	display: grid;
-	grid-template-columns: 1fr;
+	position: relative;
+	grid-template-columns: 1fr 1fr;
 	width : 100%;
 }
 
+/* ------------------------------------- navigation --------------------------------------- */
+
 .nav-wrapper{
 	display: flex;
-	position: sticky;
-	top: 0;
 	justify-content: space-between;
 	padding: 25px;
 	background-color: lightgreen;
 }
 
+/* ----------------------------------- left side buttons ----------------------------------- */
+
 .left-side{
 	display: flex;
 }
+
+.left-side > .btn{
+	margin: 2%;
+	color: black;
+	background-color: #DEC4F5;
+}
+
+.left-side > .btn:hover {
+	color: black;
+	border-color: black;
+}
+
+/* --------------------------------------- title -------------------------------------------*/
 
 .title{
 	font-family: "Lexend Mega", sans-serif;
 	display: flex;
 	margin-right: 200px;
 	font-size: 110%
-}
-
-.btn{
-	background-color: white;
-	color: black;
-	margin-right: 15px;
 }
 
 .center{
@@ -48,11 +58,55 @@ body {
 	margin-top: 10px
 }
 
+
+/* -------------------------------- button meal + image --------------------------------------*/
+
+.container img {
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 50%;
+	opacity: 0.8;
+	border-radius: 10px;
+	height: auto;
+}
+
+.container > .btn {
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 20%;
+	background-color: lightgreen;
+	color: black;
+	font-size: 16px;
+	padding: 16px 30px;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.container > .btn:hover {
+	background-color: lightgreen;
+	color: black;
+	border-color: black;
+}
+
+/* --------------------------------------- display meal --------------------------------------*/
+
+.accordion{
+	grid-column: 2;
+	margin-top: 20px;
+	width: 70%;
+	
+}
+
+/* --------------------------------------- Add Recipe ----------------------------------------*/
+
 .add-recipe{
-	margin-top: 1500px;
-	margin-right: 700px;
-	margin-left: -200px;
-	margin-bottom: 50px
+	grid-column: 1;
+	margin-top: 150%;
+	margin-right: 5%;
+	margin-left: 10%;
+	margin-bottom: 15%
 }
 
 .text-add{
@@ -69,8 +123,13 @@ body {
 	margin-right: 5px
 }
 
-.generator{
-	margin-top: 200px;	
+.input-group > .form-select > .btn{
+	background-color: white;
+	color: black;
+	margin-right: 15px;
 }
+
+
+
 
 
