@@ -3,13 +3,15 @@ body {
 	position: relative;
 	background-color: white
 	width: 100%;
+	justify-content: center;
 }
 
 .container{
 	display: grid;
 	position: relative;
 	grid-template-columns: 1fr 1fr;
-	width : 100%;
+	width: 100%;
+	justify-content: center;
 }
 
 /* ------------------------------------- navigation --------------------------------------- */
@@ -30,7 +32,7 @@ body {
 .left-side > .btn{
 	margin: 2%;
 	color: black;
-	background-color: #DEC4F5;
+	background-color: #FDC189 ;
 }
 
 .left-side > .btn:hover {
@@ -65,17 +67,16 @@ body {
 .container img {
 	position: absolute;
 	margin-top: 5%;
-	margin-left: 0%;
 	width: 50%;
 	opacity: 0.8;
 	border-radius: 10px;
-	height: auto;
 }
 
 .container > .btn {
 	position: absolute;
 	margin-top: 20%;
 	margin-left: 15%;
+	margin-right: 5%;
 	background-color: lightgreen;
 	color: black;
 	font-size: 16px;
@@ -93,20 +94,23 @@ body {
 
 /* --------------------------------------- display meal --------------------------------------*/
 
-.accordion{
-	grid-column: 2;
-	margin-top: 5%;
-	width: 80%;
-	margin-left: 20%;
-	margin-right: 20%;
-	margin-bottom: 5%;
-}
-
 .card{
 	grid-column: 2;
 	width: 80%;
 	margin-top: 15%;
-	margin-left: 20%;
+	margin-left: 25%;
+	background-color: #FDC189;
+}
+
+.accordion{
+	grid-column: 2;
+	margin-top: 5%;
+	width: 80%;
+	margin-left: 25%;
+	margin-right: 20%;
+	margin-bottom: 5%;
+	background-color: #FDC189;
+	border-radius: 10px;
 }
 
 /* --------------------------------------- Add Recipe ----------------------------------------*/
@@ -114,8 +118,6 @@ body {
 .add-recipe{
 	grid-column: 1;
 	margin-top: 110%;
-	margin-right: 5%;
-	margin-left: 10%;
 	margin-bottom: 15%;
 }
 
@@ -136,7 +138,7 @@ body {
 .input-group > .form-select > .btn{
 	background-color: white;
 	color: black;
-	margin-right: 15px;
+	margin-right: 15px; 
 }
 
 
