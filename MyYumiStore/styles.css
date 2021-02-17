@@ -1,9 +1,14 @@
 body {
 	/* remember : font-family */
-	position: relative;
-	background-color: white
+	position: absolute;
 	width: 100%;
 	justify-content: center;
+}
+
+body > .backgnd img{
+	position: absolute;
+	width: 100%;
+	opacity: 0.5;
 }
 
 .container{
@@ -19,6 +24,8 @@ body {
 
 .nav-wrapper{
 	display: flex;
+	position: absolute;
+	width: 100%;
 	justify-content: space-between;
 	padding: 25px;
 	background-color: lightgreen;
@@ -26,40 +33,30 @@ body {
 
 /* ----------------------------------- left side buttons ----------------------------------- */
 
-.left-side{
+.right-side{
 	display: flex;
+	margin-right: 1%;
 }
 
-.left-side > .btn{
+.right-side > .btn{
 	margin: 2%;
 	color: black;
 	background-color: #FDC189 ;
+	width: 100%;
 }
 
-.left-side > .btn:hover {
+.right-side > .btn:hover {
 	color: black;
 	border-color: black;
+
 }
 
 /* --------------------------------------- title -------------------------------------------*/
 
-.title{
+.left-side{
 	font-family: "Lexend Mega", sans-serif;
 	display: flex;
-	margin-right: 200px;
-	font-size: 110%
-}
-
-.center{
-	display: flex
-	justify-content: center;
-	font-size: 1.5rem;
-}
-
-.right-side{
-	display: flex;
-	font-family: "Lexend Mega", sans-serif;
-	margin-top: 10px
+	font-size: 200%;
 }
 
 
@@ -69,9 +66,9 @@ body {
 	position: absolute;
 	grid-column: 1;
 	grid-row: 1;
-	margin-top: 7%;
+	margin-top: 16%;
 	width: 45%;
-	opacity: 0.8;
+	opacity: 1;
 	border-radius: 10px;
 }
 
@@ -79,7 +76,7 @@ body {
 	position: absolute;
 	grid-row: 1;
 	grid-column: 1;
-	margin-top: 19%;
+	margin-top: 28%;
 	margin-left: 14%;
 	margin-right: 5%;
 	background-color: lightgreen;
@@ -104,7 +101,7 @@ body {
 	grid-row: 1;
 	width: 80%;
 	height: 12%;
-	margin-top: 15%;
+	margin-top: 35%;
 	margin-left: 25%;
 	background-color: #FDC189;
 }
@@ -113,7 +110,7 @@ body {
 	grid-column: 2;
 	grid-row: 1;
 	position: relative;
-	margin-top: 30%;
+	margin-top: 50%;
 	width: 80%;
 	margin-left: 25%;
 	margin-right: 20%;
@@ -121,12 +118,20 @@ body {
 	border-radius: 10px;
 }
 
+.accordion > .accordion-item > .accordion-header > .accordion-button{
+	background-color: #FDC189;
+}
+
+.accordion > .accordion-item > .accordion-header > .accordion-button:hover{
+	
+}
+
 /* --------------------------------------- Add Recipe ----------------------------------------*/
 
 .add-recipe{
 	grid-column: 1;
 	grid-row: 2;
-	margin-top: 20%;
+	margin-top: 30%;
 	margin-bottom: 5%;
 }
 
@@ -144,6 +149,10 @@ body {
 	margin-right: 5px
 }
 
+.input-group > .input-group-text{
+	background-color: #FDC189;
+}
+
 .input-group > .form-select > .btn{
 	background-color: white;
 	color: black;
@@ -156,7 +165,7 @@ body {
 	grid-column: 2;
 	grid-row: 2;
 	position: absolute;
-	margin-top: 20%;
+	margin-top: 30%;
 	margin-left: 43%;
 }
 
@@ -170,7 +179,7 @@ body {
 	font-size: 16px;
 	text-align: center;
 	color: black;
-	margin-top: 32%;
+	margin-top: 42%;
 	margin-left: 52%
 }
 
@@ -184,6 +193,7 @@ body {
 /* --------------------------------------- About ----------------------------------------*/
 
 .container_about{
+	position: absolute;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
@@ -191,17 +201,19 @@ body {
 
 .container_about img{
 	grid-column: 1;	
-	margin-top: 10%;
+	margin-top: 25%;
 	margin-left: 25%;
 	border-radius: 10px;
+	width: 60%;
 }
 
 .text_about{
 	grid-column: 2;
-	justify-content: center;
+	justify-content: justify;
+	font-size: 20px;
 	padding: 10%;
 	margin-right: 20%;
-	margin-top: 15%;
+	margin-top: 35%;
 	
 }
 
