@@ -10,6 +10,7 @@ body {
 	display: grid;
 	position: relative;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	width: 100%;
 	justify-content: center;
 }
@@ -66,15 +67,19 @@ body {
 
 .container img {
 	position: absolute;
-	margin-top: 5%;
+	grid-column: 1;
+	grid-row: 1;
+	margin-top: 7%;
 	width: 45%;
 	opacity: 0.8;
 	border-radius: 10px;
 }
 
-.container > .btn {
+.container > .food > .btn {
 	position: absolute;
-	margin-top: 17%;
+	grid-row: 1;
+	grid-column: 1;
+	margin-top: 19%;
 	margin-left: 14%;
 	margin-right: 5%;
 	background-color: lightgreen;
@@ -86,7 +91,7 @@ body {
 	text-align: center;
 }
 
-.container > .btn:hover {
+.container > .food > .btn:hover {
 	background-color: lightgreen;
 	color: black;
 	border-color: black;
@@ -96,7 +101,9 @@ body {
 
 .card{
 	grid-column: 2;
+	grid-row: 1;
 	width: 80%;
+	height: 12%;
 	margin-top: 15%;
 	margin-left: 25%;
 	background-color: #FDC189;
@@ -104,12 +111,13 @@ body {
 
 .accordion{
 	grid-column: 2;
-	margin-top: 5%;
+	grid-row: 1;
+	position: relative;
+	margin-top: 30%;
 	width: 80%;
 	margin-left: 25%;
 	margin-right: 20%;
 	margin-bottom: 5%;
-	background-color: #FDC189;
 	border-radius: 10px;
 }
 
@@ -117,8 +125,9 @@ body {
 
 .add-recipe{
 	grid-column: 1;
-	margin-top: 110%;
-	margin-bottom: 15%;
+	grid-row: 2;
+	margin-top: 20%;
+	margin-bottom: 5%;
 }
 
 .text-add{
@@ -141,6 +150,36 @@ body {
 	margin-right: 15px; 
 }
 
+/* --------------------------------------- Search ----------------------------------------*/
+
+.container > .restaurant img{
+	grid-column: 2;
+	grid-row: 2;
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 43%;
+}
+
+.container > .restaurant > .btn{
+	grid-column: 2;
+	grid-row: 2;
+	position: absolute;
+	background-color: lightgreen;
+	padding: 10px 70px;
+	cursor: pointer;
+	font-size: 16px;
+	text-align: center;
+	color: black;
+	margin-top: 32%;
+	margin-left: 52%
+}
+
+.container > .restaurant > .btn:hover {
+	background-color: lightgreen;
+	color: black;
+	border-color: black;
+}
+
 
 /* --------------------------------------- About ----------------------------------------*/
 
@@ -153,14 +192,19 @@ body {
 .container_about img{
 	grid-column: 1;	
 	margin-top: 10%;
-	margin-left: 15%;
+	margin-left: 25%;
 	border-radius: 10px;
 }
 
 .text_about{
 	grid-column: 2;
 	justify-content: center;
+	padding: 10%;
+	margin-right: 20%;
+	margin-top: 15%;
 	
 }
+
+
 
 
