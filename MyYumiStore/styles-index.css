@@ -3,12 +3,7 @@ body {
 	position: absolute;
 	width: 100%;
 	justify-content: center;
-}
-
-body > .backgnd img{
-	position: absolute;
-	width: 100%;
-	opacity: 0.5;
+	background-image: url(images/backgrnd.png); 
 }
 
 .container{
@@ -28,7 +23,7 @@ body > .backgnd img{
 	width: 100%;
 	justify-content: space-between;
 	padding: 25px;
-	background-color: lightgreen;
+	background-color: #0FA373;
 }
 
 /* ----------------------------------- left side buttons ----------------------------------- */
@@ -48,7 +43,6 @@ body > .backgnd img{
 .right-side > .btn:hover {
 	color: black;
 	border-color: black;
-
 }
 
 /* --------------------------------------- title -------------------------------------------*/
@@ -58,6 +52,10 @@ body > .backgnd img{
 	display: flex;
 	font-size: 200%;
 }
+
+#gato {
+	width: 5%;
+} 
 
 
 /* -------------------------------- button meal + image --------------------------------------*/
@@ -79,8 +77,9 @@ body > .backgnd img{
 	margin-top: 28%;
 	margin-left: 14%;
 	margin-right: 5%;
-	background-color: lightgreen;
-	color: black;
+	border-color: white;
+	background-color: #0FA373;
+	color: white;
 	font-size: 16px;
 	padding: 16px 30px;
 	cursor: pointer;
@@ -89,9 +88,9 @@ body > .backgnd img{
 }
 
 .container > .food > .btn:hover {
-	background-color: lightgreen;
-	color: black;
-	border-color: black;
+	background-color: #097754 ;
+	color: white;
+	border-color: white;
 }
 
 /* --------------------------------------- display meal --------------------------------------*/
@@ -100,9 +99,10 @@ body > .backgnd img{
 	grid-column: 2;
 	grid-row: 1;
 	width: 80%;
-	height: 12%;
+	height: 11%;
 	margin-top: 35%;
 	margin-left: 25%;
+	border-radius: 5px;
 	background-color: #FDC189;
 }
 
@@ -123,15 +123,18 @@ body > .backgnd img{
 }
 
 .accordion > .accordion-item > .accordion-header > .accordion-button:hover{
-	
+	color: black;
+	background-color: #FDB471;
+	border-color: black;
 }
+
 
 /* --------------------------------------- Add Recipe ----------------------------------------*/
 
 .add-recipe{
 	grid-column: 1;
 	grid-row: 2;
-	margin-top: 30%;
+	margin-top: 20%;
 	margin-bottom: 5%;
 }
 
@@ -165,7 +168,7 @@ body > .backgnd img{
 	grid-column: 2;
 	grid-row: 2;
 	position: absolute;
-	margin-top: 30%;
+	margin-top: 28%;
 	margin-left: 43%;
 }
 
@@ -173,50 +176,19 @@ body > .backgnd img{
 	grid-column: 2;
 	grid-row: 2;
 	position: absolute;
-	background-color: lightgreen;
+	border-color: white;
+	background-color: #0FA373;
+	color: white;
 	padding: 10px 70px;
 	cursor: pointer;
 	font-size: 16px;
 	text-align: center;
-	color: black;
-	margin-top: 42%;
+	margin-top: 40%;
 	margin-left: 52%
 }
 
 .container > .restaurant > .btn:hover {
-	background-color: lightgreen;
-	color: black;
-	border-color: black;
+	border-color: white;
+	background-color: #097754;
+	color: white;
 }
-
-
-/* --------------------------------------- About ----------------------------------------*/
-
-.container_about{
-	position: absolute;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	width: 100%;
-}
-
-.container_about img{
-	grid-column: 1;	
-	margin-top: 25%;
-	margin-left: 25%;
-	border-radius: 10px;
-	width: 60%;
-}
-
-.text_about{
-	grid-column: 2;
-	justify-content: justify;
-	font-size: 20px;
-	padding: 10%;
-	margin-right: 20%;
-	margin-top: 35%;
-	
-}
-
-
-
-
