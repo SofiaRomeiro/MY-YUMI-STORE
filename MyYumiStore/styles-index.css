@@ -18,6 +18,7 @@ body {
 /* ------------------------------------- navigation --------------------------------------- */
 
 .nav-wrapper{
+	grid-row: 1;
 	display: flex;
 	position: absolute;
 	width: 100%;
@@ -68,7 +69,7 @@ body {
 	width: 45%;
 	opacity: 1;
 	border-radius: 10px;
-}
+} 
 
 .container > .food > .btn {
 	position: absolute;
