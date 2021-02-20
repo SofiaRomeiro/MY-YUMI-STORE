@@ -1,6 +1,6 @@
 body {
 	/* remember : font-family */
-	position: absolute;
+
 	width: 100%;
 	justify-content: center;
 	background-image: url(images/backgrnd.png); 
@@ -18,7 +18,6 @@ body {
 /* ------------------------------------- navigation --------------------------------------- */
 
 .nav-wrapper{
-	grid-row: 1;
 	display: flex;
 	position: absolute;
 	width: 100%;
