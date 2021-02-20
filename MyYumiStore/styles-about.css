@@ -68,11 +68,12 @@ body {
 #me{
 	grid-area: me;
 	position: relative;
+	padding: 10%;
 }
 
 .text-about{
 	grid-area: texto;
-	padding: 5%;
+	padding: 10%;
 }
 
 .greet-txt{
