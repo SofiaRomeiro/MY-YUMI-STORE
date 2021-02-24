@@ -1,8 +1,9 @@
 body {
 	/* remember : font-family */
-
+	height: 100%;
 	width: 100%;
 	justify-content: center;
+	margin: 0px;
 	background-image: url(images/backgrnd.png); 
 }
 
@@ -19,7 +20,6 @@ body {
 
 .nav-wrapper{
 	display: flex;
-	position: absolute;
 	width: 100%;
 	justify-content: space-between;
 	padding: 25px;
@@ -48,34 +48,37 @@ body {
 /* --------------------------------------- title -------------------------------------------*/
 
 .left-side{
-	font-family: "Lexend Mega", sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 	display: flex;
 	font-size: 200%;
+	text-shadow: 2px 2px 2px lightgrey;
 }
 
 #gato {
 	width: 5%;
+	margin-right: 1%;
 } 
 
 
 /* -------------------------------- button meal + image --------------------------------------*/
 
-.container img {
+#food {
 	position: absolute;
 	grid-column: 1;
 	grid-row: 1;
-	margin-top: 16%;
+	margin-top: 6%;
 	width: 45%;
 	opacity: 1;
 	border-radius: 10px;
+	border: solid darkgrey 1px;
 } 
 
 .container > .food > .btn {
-	position: absolute;
+	position: relative;
 	grid-row: 1;
 	grid-column: 1;
-	margin-top: 28%;
-	margin-left: 14%;
+	margin-top: 38%;
+	margin-left: 28%;
 	margin-right: 5%;
 	border-color: white;
 	background-color: #0FA373;
@@ -100,18 +103,19 @@ body {
 	grid-row: 1;
 	width: 80%;
 	height: 11%;
-	margin-top: 35%;
+	margin-top: 15%;
 	margin-left: 25%;
 	border-radius: 5px;
 	background-color: #FDC189;
+	border: solid black 1px;
 }
 
 .accordion{
 	grid-column: 2;
 	grid-row: 1;
 	position: relative;
-	margin-top: 50%;
 	width: 80%;
+	margin-top: 30%;
 	margin-left: 25%;
 	margin-right: 20%;
 	margin-bottom: 5%;
@@ -134,14 +138,15 @@ body {
 .add-recipe{
 	grid-column: 1;
 	grid-row: 2;
-	margin-top: 20%;
-	margin-bottom: 5%;
+	margin-top: 12%;
+	margin-bottom: 10%;
 }
 
 .text-add{
 	display: flex;
 	padding-bottom: 15px;
 	font-size: 150%;
+	text-shadow: 2px 2px 2px lightgrey;
 }
 
 .input-group{
@@ -164,27 +169,32 @@ body {
 
 /* --------------------------------------- Search ----------------------------------------*/
 
-.container > .restaurant img{
+.restaurant img{
 	grid-column: 2;
 	grid-row: 2;
 	position: absolute;
-	margin-top: 28%;
-	margin-left: 43%;
+	margin-top: 5%;
+	margin-left: 25%;
+	width: 85%;
+	height: 75%;
+	border-radius: 5%;
 }
 
 .container > .restaurant > .btn{
 	grid-column: 2;
 	grid-row: 2;
-	position: absolute;
+	position: relative;
 	border-color: white;
 	background-color: #0FA373;
 	color: white;
-	padding: 10px 70px;
+	height: 10%;
+	width: 20%;
+	padding-top: 1.5%;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 20px;
 	text-align: center;
-	margin-top: 40%;
-	margin-left: 52%
+	margin-top: 30%;
+	margin-left: 59%
 }
 
 .container > .restaurant > .btn:hover {
