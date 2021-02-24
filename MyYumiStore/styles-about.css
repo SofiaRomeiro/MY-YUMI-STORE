@@ -10,12 +10,12 @@ body {
 .m-container{
 	display: grid;
 	position: relative;
-	grid-template-columns: 55% 25% auto;
+	grid-template-columns: 45% 25% auto;
 	grid-template-rows: 15% 40% 5% auto;
 	grid-template-areas:  "header  header header"
 						  "me      texto  texto"
 						  "me    greet-txt greet-txt"
-						  "me       vasco  rui";
+						  "me      vasco  rui";
 	width: 100% !important;
 	height: 100%;
 	margin: 0px !important;
@@ -64,37 +64,50 @@ body {
 
 /* --------------------------------------- About ----------------------------------------*/
 
-
 #me{
 	grid-area: me;
 	position: relative;
 	padding: 10%;
+	align-content: left;
 }
 
-.text-about{
+
+#card-about{
+	border-radius: 20px;
 	grid-area: texto;
-	padding: 10%;
+	margin-top: 2%;
+	margin-right: 25%;
+	padding: 5%;
+	height: 90%;
+	background-color: #FADEC4; 
+	border-color: black;
 }
+
 
 .greet-txt{
 	grid-area: greet-txt;
+	margin-top: 5%;
 	position: relative;
 }
 
 #vasco{
 	grid-area: vasco;
+	margin-top: 10%;
 }
 
 #rui{	 
 	grid-area: rui;
+	margin-top: 10%;
 }
 
 #vasco img{
 	height: 50%;
+	border-radius: 15%;
 }
 
 #rui img{
-	height: 45%;
+	height: 50%;
+	border-radius: 15%;
 }
 
 
