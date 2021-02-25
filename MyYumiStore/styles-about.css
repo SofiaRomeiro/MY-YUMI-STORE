@@ -25,7 +25,8 @@ body {
 	display: flex; 
 	width: 100%;
 	justify-content: space-between;
-	padding: 25px;
+	padding: 1%;
+	height: 5%;
 	background-color: #0FA373;
 }
 
@@ -34,19 +35,19 @@ body {
 .right-side{
 	display: flex;
 	margin-right: 1%;
-} 
+}
 
 .right-side > .btn{
 	margin: 2%;
 	color: black;
 	background-color: #FDC189;
 	width: 100%;
-} 
+}
 
-.right-side > .btn:hover {
+.right-side > .btn:hover{
 	color: black;
 	border-color: black;
-} 
+}
 
 /* --------------------------------------- title -------------------------------------------*/
 
@@ -87,11 +88,12 @@ body {
 	border-radius: 20px;
 	grid-area: texto;	
 	height: 85%;
-	max-height: 85%;
+	max-height: 100%;
 	width: 65%;
-	max-width: 70%;
+	max-width: 90%;
 	background-color: #FADEC4; 
 	border-color: black;
+	overflow: hidden;
 }
 
 
