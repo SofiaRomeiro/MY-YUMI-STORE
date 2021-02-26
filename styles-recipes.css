@@ -39,6 +39,7 @@ body {
 	color: black;
 	background-color: #FDC189;
 	width: 100%;
+	border-color: white;
 } 
 
 .right-side > .btn:hover {
@@ -69,7 +70,7 @@ body {
 	border-radius: 5%;
 	box-shadow: 2px 2px 3px grey;
 	align-items: center;
-	background-color: lightyellow;
+	background-color: #E1C569;
 }
 
 #card1{

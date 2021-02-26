@@ -38,6 +38,7 @@ body {
 	color: black;
 	background-color: #FDC189 ;
 	width: 100%;
+	border-color: white;
 }
 
 .right-side > .btn:hover {
