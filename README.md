@@ -1,8 +1,26 @@
-## Useful Links 
+## TO DO
+>#### 1. Build the project
+>> - creating folder
+>> - creating files
+>> - adding files and connecting
 
-> - [REST API's](https://www.youtube.com/watch?v=SLwpqD8n3d0)
-> - [High Resolution Images](https://unsplash.com)
-> - [Text Fonts](https://fonts.google.com)
-> - [WebsiteBasics](https://www.youtube.com/watch?v=5bMdjkfvONE)
-> - [Bootstrap](https://getbootstrap.com/docs/5.0/components/card/)
-> - [Html - Color Codes](https://htmlcolorcodes.com)
+>#### 2. Navbar 
+>> - 3 links
+>> - title
+>> - name 
+
+>#### 3. Body
+>> - 1 link
+>> - 1 add section
+>> - images
+>> - text
+
+>#### 4. Recipee Page 
+>> - background
+>> - text
+
+>#### 5. About page
+>> - image
+>> - description
+
+> [base](https://www.epicurious.com)
