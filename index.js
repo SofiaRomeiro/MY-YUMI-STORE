@@ -8,14 +8,8 @@ class Recipe {
 }
 
 const lista = [
-	{
-		'name': 'porco',
-		'type': 'carne',
-		'ingredients': [],
-		'preparation': []
-	},
+	new Recipe('porco', 'carne', [], []),
 	new Recipe('vaca', 'carne', [], [])
-
 ];
 
 const results = lista.filter((receita) => {
